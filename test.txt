@@ -1,0 +1,421 @@
+['CMEM', '2']
+['LDA', '', '1']
+['LDB', '', '2']
+['ADD', '', '2']
+['JR', '', '', '-4']
+{
+    "blueprint": {
+        "entities": [
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 3
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 3
+                            }
+                        ]
+                    }
+                }, 
+                "direction": 2, 
+                "entity_number": 1, 
+                "name": "medium-electric-pole", 
+                "position": {
+                    "x": 0, 
+                    "y": 1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 3
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "filters": []
+                }, 
+                "direction": 4, 
+                "entity_number": 2, 
+                "name": "constant-combinator", 
+                "position": {
+                    "x": 1, 
+                    "y": -1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 1
+                            }, 
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 5
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 2
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 1
+                            }, 
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 5
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "comparator": "=", 
+                        "constant": 1, 
+                        "copy_count_from_input": true, 
+                        "first_signal": {
+                            "name": "signal-I", 
+                            "type": "virtual"
+                        }, 
+                        "output_signal": {
+                            "name": "signal-J", 
+                            "type": "virtual"
+                        }
+                    }
+                }, 
+                "direction": 4, 
+                "entity_number": 3, 
+                "name": "decider-combinator", 
+                "position": {
+                    "x": 1, 
+                    "y": 0.5
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 5
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "filters": []
+                }, 
+                "direction": 4, 
+                "entity_number": 4, 
+                "name": "constant-combinator", 
+                "position": {
+                    "x": 2, 
+                    "y": -1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 3
+                            }, 
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 7
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 4
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 3
+                            }, 
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 7
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "comparator": "=", 
+                        "constant": 2, 
+                        "copy_count_from_input": true, 
+                        "first_signal": {
+                            "name": "signal-I", 
+                            "type": "virtual"
+                        }, 
+                        "output_signal": {
+                            "name": "signal-J", 
+                            "type": "virtual"
+                        }
+                    }
+                }, 
+                "direction": 4, 
+                "entity_number": 5, 
+                "name": "decider-combinator", 
+                "position": {
+                    "x": 2, 
+                    "y": 0.5
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 7
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "filters": []
+                }, 
+                "direction": 4, 
+                "entity_number": 6, 
+                "name": "constant-combinator", 
+                "position": {
+                    "x": 3, 
+                    "y": -1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 5
+                            }, 
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 9
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 6
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 5
+                            }, 
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 9
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "comparator": "=", 
+                        "constant": 3, 
+                        "copy_count_from_input": true, 
+                        "first_signal": {
+                            "name": "signal-I", 
+                            "type": "virtual"
+                        }, 
+                        "output_signal": {
+                            "name": "signal-J", 
+                            "type": "virtual"
+                        }
+                    }
+                }, 
+                "direction": 4, 
+                "entity_number": 7, 
+                "name": "decider-combinator", 
+                "position": {
+                    "x": 3, 
+                    "y": 0.5
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 9
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "filters": []
+                }, 
+                "direction": 4, 
+                "entity_number": 8, 
+                "name": "constant-combinator", 
+                "position": {
+                    "x": 4, 
+                    "y": -1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 7
+                            }, 
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 11
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 8
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 7
+                            }, 
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 11
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "comparator": "=", 
+                        "constant": 4, 
+                        "copy_count_from_input": true, 
+                        "first_signal": {
+                            "name": "signal-I", 
+                            "type": "virtual"
+                        }, 
+                        "output_signal": {
+                            "name": "signal-J", 
+                            "type": "virtual"
+                        }
+                    }
+                }, 
+                "direction": 4, 
+                "entity_number": 9, 
+                "name": "decider-combinator", 
+                "position": {
+                    "x": 4, 
+                    "y": 0.5
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 11
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "filters": []
+                }, 
+                "direction": 4, 
+                "entity_number": 10, 
+                "name": "constant-combinator", 
+                "position": {
+                    "x": 5, 
+                    "y": -1
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 9
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 10
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "rot": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 9
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "comparator": "=", 
+                        "constant": 5, 
+                        "copy_count_from_input": true, 
+                        "first_signal": {
+                            "name": "signal-I", 
+                            "type": "virtual"
+                        }, 
+                        "output_signal": {
+                            "name": "signal-J", 
+                            "type": "virtual"
+                        }
+                    }
+                }, 
+                "direction": 4, 
+                "entity_number": 11, 
+                "name": "decider-combinator", 
+                "position": {
+                    "x": 5, 
+                    "y": 0.5
+                }
+            }
+        ]
+    }, 
+    "version": 64425164803
+}

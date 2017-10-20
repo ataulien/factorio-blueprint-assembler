@@ -1,0 +1,21 @@
+
+
+
+O: Operation
+	1: LD-Arith-1
+	2: LD-Arith-2
+	3: Cl-Arith
+	4: Add
+	5: Sub
+	6: Mul
+	7: Div
+	8: Mod
+	
+Schwarz: addr-output
+V: Immediate-Wert
+I: Instruction-Pulse
+
+Konstanten:
+0:     0
+E:     1
+Weiß: -1

@@ -1,0 +1,90 @@
+{
+    "blueprint": {
+        "entities": [
+            {
+                "position": {
+                    "y": -1, 
+                    "x": 0
+                }, 
+                "entity_number": 1, 
+                "direction": 4, 
+                "name": "constant-combinator"
+            }, 
+            {
+                "entity_number": 2, 
+                "name": "decider-combinator", 
+                "direction": 4, 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 3
+                            }
+                        ]
+                    }, 
+                    "2": {
+                        "red": [
+                            {
+                                "entity_id": 3
+                            }
+                        ]
+                    }
+                }, 
+                "control_behavior": {
+                    "decider_conditions": {
+                        "copy_count_from_input": true, 
+                        "constant": 0, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 0.5, 
+                    "x": 0
+                }
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "circuit_id": 1, 
+                                "entity_id": 2
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "circuit_id": 2, 
+                                "entity_id": 2
+                            }
+                        ]
+                    }
+                }, 
+                "position": {
+                    "y": 1, 
+                    "x": -1
+                }, 
+                "entity_number": 3, 
+                "name": "medium-electric-pole"
+            }
+        ], 
+        "label": "Instruction_base", 
+        "version": 64425295872, 
+        "item": "blueprint", 
+        "icons": [
+            {
+                "index": 1, 
+                "signal": {
+                    "type": "item", 
+                    "name": "decider-combinator"
+                }
+            }, 
+            {
+                "index": 2, 
+                "signal": {
+                    "type": "item", 
+                    "name": "constant-combinator"
+                }
+            }
+        ]
+    }
+}

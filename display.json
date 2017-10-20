@@ -1,0 +1,953 @@
+{
+    "blueprint": {
+        "entities": [
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "underground-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -4, 
+                    "x": -2
+                }, 
+                "entity_number": 1, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 6
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "substation"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -4, 
+                    "x": 0
+                }, 
+                "entity_number": 2, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 10
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "long-handed-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -4, 
+                    "x": -1
+                }, 
+                "entity_number": 3, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 9
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "locomotive"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -4, 
+                    "x": 1
+                }, 
+                "entity_number": 4, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 12
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "fast-transport-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -2, 
+                    "x": -2
+                }, 
+                "entity_number": 5, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 6
+                            }, 
+                            {
+                                "entity_id": 14
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "express-transport-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -3, 
+                    "x": -2
+                }, 
+                "entity_number": 6, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 5
+                            }, 
+                            {
+                                "entity_id": 1
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "medium-electric-pole"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -2, 
+                    "x": 0
+                }, 
+                "entity_number": 7, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 10
+                            }, 
+                            {
+                                "entity_id": 18
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "burner-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -2, 
+                    "x": -1
+                }, 
+                "entity_number": 8, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 9
+                            }, 
+                            {
+                                "entity_id": 17
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -3, 
+                    "x": -1
+                }, 
+                "entity_number": 9, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 8
+                            }, 
+                            {
+                                "entity_id": 3
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "big-electric-pole"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -3, 
+                    "x": 0
+                }, 
+                "entity_number": 10, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 7
+                            }, 
+                            {
+                                "entity_id": 2
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "rail-signal"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -2, 
+                    "x": 1
+                }, 
+                "entity_number": 11, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 12
+                            }, 
+                            {
+                                "entity_id": 20
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "rail-chain-signal"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -3, 
+                    "x": 1
+                }, 
+                "entity_number": 12, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 11
+                            }, 
+                            {
+                                "entity_id": 4
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "storage-tank"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": -2
+                }, 
+                "entity_number": 13, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 14
+                            }, 
+                            {
+                                "entity_id": 22
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "transport-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -1, 
+                    "x": -2
+                }, 
+                "entity_number": 14, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 13
+                            }, 
+                            {
+                                "entity_id": 5
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "fast-splitter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": -1
+                }, 
+                "entity_number": 15, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 17
+                            }, 
+                            {
+                                "entity_id": 24
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "stack-filter-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": 0
+                }, 
+                "entity_number": 16, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 18
+                            }, 
+                            {
+                                "entity_id": 23
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "express-splitter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -1, 
+                    "x": -1
+                }, 
+                "entity_number": 17, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 15
+                            }, 
+                            {
+                                "entity_id": 8
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "small-electric-pole"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -1, 
+                    "x": 0
+                }, 
+                "entity_number": 18, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 16
+                            }, 
+                            {
+                                "entity_id": 7
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "rail"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": 1
+                }, 
+                "entity_number": 19, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 20
+                            }, 
+                            {
+                                "entity_id": 27
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "train-stop"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -1, 
+                    "x": 1
+                }, 
+                "entity_number": 20, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 19
+                            }, 
+                            {
+                                "entity_id": 11
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "iron-chest"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 2, 
+                    "x": -2
+                }, 
+                "entity_number": 21, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 22
+                            }, 
+                            {
+                                "entity_id": 29
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "steel-chest"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 1, 
+                    "x": -2
+                }, 
+                "entity_number": 22, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 21
+                            }, 
+                            {
+                                "entity_id": 13
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "stack-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 1, 
+                    "x": 0
+                }, 
+                "entity_number": 23, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 16
+                            }, 
+                            {
+                                "entity_id": 26
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "splitter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 1, 
+                    "x": -1
+                }, 
+                "entity_number": 24, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 15
+                            }, 
+                            {
+                                "entity_id": 25
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "express-underground-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 2, 
+                    "x": -1
+                }, 
+                "entity_number": 25, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 24
+                            }, 
+                            {
+                                "entity_id": 31
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "filter-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 2, 
+                    "x": 0
+                }, 
+                "entity_number": 26, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 23
+                            }, 
+                            {
+                                "entity_id": 30
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "pump"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 1, 
+                    "x": 1
+                }, 
+                "entity_number": 27, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 19
+                            }, 
+                            {
+                                "entity_id": 28
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "pipe-to-ground"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 2, 
+                    "x": 1
+                }, 
+                "entity_number": 28, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 27
+                            }, 
+                            {
+                                "entity_id": 32
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "wooden-chest"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 3, 
+                    "x": -2
+                }, 
+                "entity_number": 29, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 21
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "fast-inserter"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 3, 
+                    "x": 0
+                }, 
+                "entity_number": 30, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 26
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "fast-underground-belt"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 3, 
+                    "x": -1
+                }, 
+                "entity_number": 31, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 25
+                            }
+                        ]
+                    }
+                }
+            }, 
+            {
+                "control_behavior": {
+                    "circuit_condition": {
+                        "constant": 0, 
+                        "first_signal": {
+                            "type": "item", 
+                            "name": "pipe"
+                        }, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": 3, 
+                    "x": 1
+                }, 
+                "entity_number": 32, 
+                "name": "small-lamp", 
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 28
+                            }
+                        ]
+                    }
+                }
+            }
+        ], 
+        "version": 64425492481, 
+        "item": "blueprint", 
+        "icons": [
+            {
+                "index": 1, 
+                "signal": {
+                    "type": "item", 
+                    "name": "small-lamp"
+                }
+            }
+        ]
+    }
+}

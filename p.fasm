@@ -1,0 +1,58 @@
+
+start:
+	OUT #1 #1
+	OUT #2 #2
+	OUT #3 #3
+	OUT #4 #4
+	
+	OUT #5 #1
+	OUT #6 #2
+	OUT #7 #3
+	OUT #8 #4
+	
+	OUT #9 #1
+	OUT #1 #2
+	OUT #1 #3
+	OUT #1 #4
+	
+	OUT #8 #1
+	OUT #8 #2
+	OUT #8 #3
+	OUT #8 #4
+	JMP .start
+
+
+//start:
+//	CMEM [1]
+//	ADD #1 [1]
+//loop:
+//	ADD #1 [1]
+//	CALU
+//	LDA [1]
+//	LDB #14
+//	BEQZ .start
+//	JMP .loop
+
+//start:
+//	CMEM $1
+//	CMEM $2
+//	CMEM $3
+//	CALU
+//	CG
+//	ADD #1 $1
+//loop:
+//	ADD #1 $1
+//	
+//	LDG $1
+//	LDA [$GP]
+//	LDG #1
+//	LDB [$GP]
+//	CG
+//	LDG $1
+//	ADD $GP
+//	
+//	CALU
+//	LDA $GP
+//	LDB #15
+//	BEQZ .start
+//	JMP .loop

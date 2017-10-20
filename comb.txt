@@ -1,0 +1,105 @@
+{
+    "blueprint": {
+        "entities": [
+            {
+                "control_behavior": {
+                    "arithmetic_conditions": {
+                        "operation": "*", 
+                        "constant": 0
+                    }
+                }, 
+                "position": {
+                    "y": -0.5, 
+                    "x": -6
+                }, 
+                "entity_number": 1, 
+                "name": "arithmetic-combinator"
+            }, 
+            {
+                "control_behavior": {
+                    "decider_conditions": {
+                        "copy_count_from_input": true, 
+                        "constant": 0, 
+                        "comparator": ">"
+                    }
+                }, 
+                "position": {
+                    "y": -0.5, 
+                    "x": -4
+                }, 
+                "entity_number": 2, 
+                "name": "decider-combinator"
+            }, 
+            {
+                "position": {
+                    "y": 0, 
+                    "x": -2
+                }, 
+                "entity_number": 3, 
+                "name": "constant-combinator"
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 5
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "entity_id": 5
+                            }
+                        ]
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": 2
+                }, 
+                "entity_number": 4, 
+                "name": "medium-electric-pole"
+            }, 
+            {
+                "connections": {
+                    "1": {
+                        "green": [
+                            {
+                                "entity_id": 4
+                            }
+                        ], 
+                        "red": [
+                            {
+                                "entity_id": 4
+                            }
+                        ]
+                    }
+                }, 
+                "position": {
+                    "y": 0, 
+                    "x": 6
+                }, 
+                "entity_number": 5, 
+                "name": "medium-electric-pole"
+            }
+        ], 
+        "version": 64425164803, 
+        "item": "blueprint", 
+        "icons": [
+            {
+                "index": 1, 
+                "signal": {
+                    "type": "item", 
+                    "name": "arithmetic-combinator"
+                }
+            }, 
+            {
+                "index": 2, 
+                "signal": {
+                    "type": "item", 
+                    "name": "decider-combinator"
+                }
+            }
+        ]
+    }
+}
